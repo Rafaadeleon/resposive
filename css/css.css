@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 10px;
+}
+
+header{
+    width: 160em;
+    height: auto;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    width: 44em;
+    height: 10em;
+    background-color: coral;
+
+}
+.encabezado{
+    width: 110em;
+    height: 10em;
+    background-color: aquamarine;
+}
