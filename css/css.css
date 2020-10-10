@@ -1,28 +1,170 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-body{
-    font-size: 10px;
+    font-family: sans-serif;
 }
 
-header{
+body {
+    font-size: 10px;
+    background-color: black;
+}
+
+
+/*---------------------
+# Sección del navegador
+----------------------*/
+
+header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.bodyGeneral {
     width: 160em;
     height: auto;
     margin: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.logo{
-    width: 44em;
-    height: 10em;
-    background-color: coral;
-
+.letras{
+    font-size: 3em;
+    color: aliceblue;
+    margin-left: 12em;
 }
-.encabezado{
+
+.logo {
+    width: 20em;
+    height: 10em;
+    margin-top: 4em;
+    background-color: #F05C07;
+    background-image: url(../img/herramientas.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.encabezado {
     width: 110em;
     height: 10em;
-    background-color: aquamarine;
+    margin-top: 4em;
+    background-color: ;
 }
+
+@media only screen and (max-width: 1600px) {
+    /* Laptop 1600px */
+    body {
+        font-size: 8.5px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    /* Laptop */
+    body {
+        font-size: 7px;
+    }
+}
+
+
+/*-------------------------
+# Sección de los productos
+-------------------------*/
+
+section {
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+}
+
+.producto {
+    width: 35em;
+    height: 70em;
+    margin-top: 10em;
+}
+
+.img {
+    width: 100%;
+    height: 20em;
+    background-color: gray;
+}
+
+.imgRGB {
+    background-image: url(../img/rgbimage.jpg); 
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #168374;
+}
+.photoshop{
+    background-image: url(../img/photoshop.jpg); 
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #ffffff;
+}
+.adobe{
+    background-image: url(../img/xd.png); 
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #ffffff;
+}
+.dis{
+    background-image: url(../img/dise%C3%B1og.jpg); 
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #168374;
+}
+
+.titulo {
+    width: 100%;
+    height: 10em;
+    margin-top: 4em;
+}
+
+.titulo h1 {
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.parrafo {
+    width: 100%;
+    height: auto;
+    margin-top: 4em;
+}
+
+.parrafo p {
+    font-size: 2em;
+    text-align: justify;
+}
+
+
+
+/*-------------------------
+# Sección mobil
+-------------------------*/
+
+@media only screen and (max-width:767px) {
+    .bodyGeneral {
+        width: 95%;
+    }
+    .logo {
+        width: 30%;
+        height: 10em;
+        margin-top: 4em;
+    }
+    .encabezado {
+        width: 65%;
+        height: 10em;
+        margin-top: 4em;
+        background-color: #168374;
+    }
+    .bodyContenido {
+        display: block;
+    }
+    .producto {
+        width: 100%;
+    }
+    .img {
+        width: 100%;
+        height: 50em;
+        background-color: gray;
+    }
